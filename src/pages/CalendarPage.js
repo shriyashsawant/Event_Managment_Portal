@@ -117,17 +117,7 @@ const CalendarPage = () => {
     <div className="min-h-screen relative">
       <LiquidBackground />
       
-      <div className="container mx-auto p-4 sm:p-6 lg:p-8 relative z-10">
-        <header className="flex justify-between items-center mb-8">
-          <Link to="/" className="text-white hover:text-indigo-200 font-semibold flex items-center backdrop-blur-sm bg-white/10 px-4 py-2 rounded-lg">
-            &larr; Back to Events
-          </Link>
-          <Link to="/select-template">
-            <button className="bg-white/20 hover:bg-white/30 text-white font-bold py-2 px-5 rounded-lg shadow-md hover:shadow-lg backdrop-blur-sm border border-white/20 transition-all">
-              Create Event
-            </button>
-          </Link>
-        </header>
+      <div className="relative z-10">
 
         <div className="flex justify-center mb-12">
           <div className="glass-container-darker rounded-2xl p-6 w-full max-w-4xl">

@@ -8,6 +8,7 @@ import EditEventPage from './pages/EditEventPage';
 import TemplateSelectionPage from './pages/TemplateSelectionPage';
 import CalendarPage from './pages/CalendarPage';
 import LiquidBackground from './components/LiquidBackground';
+import Navigation from './components/Navigation';
 import './App.css';
 
 
@@ -16,7 +17,8 @@ function App() {
     <Router>
       <div className="min-h-screen font-sans relative">
         <LiquidBackground />
-        <div className="relative z-10">
+        <div className="relative z-10 container mx-auto p-4 sm:p-6 lg:p-8">
+          <Navigation />
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/calendar" element={<CalendarPage />} />

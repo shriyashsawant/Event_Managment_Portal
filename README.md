@@ -2,7 +2,16 @@
 
 A modern, responsive event management platform built with React and Tailwind CSS. Create, manage, and discover events with beautiful templates and seamless user experience.
 
-![Event Portal](UI%20Images/Screenshot%202025-08-22%20233652.png)
+## 🌐 Live Demo
+Check out the live application: [https://event-managment-portal.vercel.app/](https://event-managment-portal.vercel.app/)
+
+![Event Portal](screenshots/Screenshot%202025-08-22%20233652.png)
+
+## 🎥 Demo Video
+
+A video demonstration of the Event Portal is available to showcase the application's features and functionality:
+
+📹 **Watch the Working Demo**: [Google Drive Video Link](https://drive.google.com/file/d/1g2yVsRiiWYS14fc9WLuy6IuCCJA3TiLP/view?usp=sharing)
 
 ## ✨ Features
 
