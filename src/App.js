@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import EventDetailPage from './pages/EventDetailPage';
+import CreateEventPage from './pages/CreateEventPage';
+import EditEventPage from './pages/EditEventPage'; 
+import TemplateSelectionPage from './pages/TemplateSelectionPage';
+import CalendarPage from './pages/CalendarPage';
+import LiquidBackground from './components/LiquidBackground';
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="min-h-screen font-sans relative">
+        <LiquidBackground />
+        <div className="relative z-10">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/calendar" element={<CalendarPage />} />
+            <Route path="/select-template" element={<TemplateSelectionPage />} />
+            <Route path="/event/:id" element={<EventDetailPage />} />
+            <Route path="/create" element={<CreateEventPage />} />
+            <Route path="/event/:id/edit" element={<EditEventPage />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
